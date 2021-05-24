@@ -190,6 +190,17 @@
             <argument type="service" id="liip_imagine.cache.manager" />
         </service>
 
+        <!--
+        @todo remove previous service and add these 2 in 3.x
+        <service id="liip_imagine.templating.filter_extension" class="Liip\ImagineBundle\Templating\LazyFilterExtension" public="false">
+            <tag name="twig.extension" />
+        </service>
+        <service id="liip_imagine.templating.filter_runtime" class="Liip\ImagineBundle\Templating\LazyFilterRuntime" public="false">
+            <tag name="twig.runtime" />
+            <argument type="service" id="liip_imagine.cache.manager" />
+        </service>
+        -->
+
         <!-- Filter loaders -->
 
         <service id="liip_imagine.filter.loader.relative_resize" class="Liip\ImagineBundle\Imagine\Filter\Loader\RelativeResizeFilterLoader">
